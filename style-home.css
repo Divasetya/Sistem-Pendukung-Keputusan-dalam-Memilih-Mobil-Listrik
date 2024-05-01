@@ -5,6 +5,7 @@
   background-image: url(/image/jalanan.jpg);
   background-size: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
