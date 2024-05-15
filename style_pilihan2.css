@@ -10,79 +10,90 @@ nav {
   align-items: center;
 }
 
-/* checkbox */
+/* radio button */
 /* The container */
-.checkboxKu {
+.radioButtonKu {
   display: block;
   position: relative;
-  padding-left: 4.7rem;
-  margin-bottom: 1rem;
+  /* padding-left: 35px; */
+  padding-top: 4rem;
+  padding-left: 0.8rem;
+  margin-bottom: 12px;
   cursor: pointer;
+  font-size: 40px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* Hide the browser's default checkbox */
-.checkboxKu input {
+/* Hide the browser's default radio button */
+.radioButtonKu input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
-  height: 0;
-  width: 0;
 }
 
-/* Create a custom checkbox */
+/* Create a custom radio button */
 .checkmark {
+  font-size: 40px;
   position: absolute;
-  top: 0.5rem;
+  top: 0;
   left: 0;
-  height: 2.9rem;
-  width: 2.9rem;
+  height: 2.8rem;
+  width: 2.8rem;
   background-color: white;
-  border: solid black 3.5px;
+  border-radius: 50%;
+  border: solid black;
 }
 
 /* On mouse-over, add a grey background color */
-.checkboxKu:hover input ~ .checkmark {
+.radioButtonKu:hover input ~ .checkmark {
   background-color: white;
 }
 
-/* When the checkbox is checked, add a blue background */
-.checkboxKu input:checked ~ .checkmark {
+/* When the radio button is checked, add a blue background */
+.radioButtonKu input:checked ~ .checkmark {
   background-color: white;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
+/* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
-.checkboxKu input:checked ~ .checkmark:after {
+/* Show the indicator (dot/circle) when checked */
+.radioButtonKu input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the checkmark/indicator */
-.checkboxKu .checkmark:after {
-  left: 0.8rem;
-  width: 1rem;
-  height: 2rem;
-  border: solid #b42b3f;
-  border-width: 0 4px 4px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+/* Style the indicator (dot/circle) */
+.radioButtonKu .checkmark:after {
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: rgb(15, 15, 15);
 }
-/* akhir checkbox */
+/* akhir radio button */
+
+.buttonTukar {
+  background-color: #b42b3f;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  padding: 0.2rem 2rem;
+  border: none;
+  border-radius: 40px;
+}
 
 .buttonSelesai {
   background-color: #b42b3f;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
   color: white;
   padding: 0.5rem 7.4rem;
   border: none;
@@ -101,7 +112,6 @@ footer a {
   padding-right: 0.5rem;
   color: #fff;
   text-decoration: none;
-  
 }
 
 footer a:hover {
