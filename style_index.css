@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-.styleJumbo {
+/* jumbotron */
+.styleJmbtrn {
   height: 57vh;
   width: 100%;
   background-image: url(image/jumbotronImage.png);
@@ -13,16 +14,19 @@
   border-radius: 0px 0px 20px 20px;
   padding-bottom: 2.5%;
 }
-.logo {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  width: 10vw;
-}
+
+/* filter */
 .fontFilter {
   font-family: "Open Sans";
   font-size: 40px;
   color: #747474;
+}
+.dropdown-menu li a {
+  color: #747474;
+}
+.dropdown-menu li a:hover {
+  color: black;
+  background-color: transparent;
 }
 .hrStyle {
   color: black;
@@ -31,10 +35,13 @@
   margin: 0px 0px;
 }
 
-.marginMerk{
+/* brand */
+.marginMerk {
   margin-right: 2%;
 }
 
-.styleMerk{
-  border-radius: 20px; width: 14vw; height: 28vh;
+.styleMerk {
+  border-radius: 20px;
+  width: 14vw;
+  height: 28vh;
 }
