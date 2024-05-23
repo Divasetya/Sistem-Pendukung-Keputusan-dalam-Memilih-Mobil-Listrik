@@ -1,0 +1,81 @@
+<?php
+  
+  include "connection.php";
+
+  $query = "SELECT car_data.image AS photo, car_data.harga AS price, car_data.tipe AS brand, ahp_results.score AS ahp_score FROM car_data JOIN ahp_results ON car_data.tipe = ahp_results.alternative ORDER BY ahp_results.score DESC";
+  
+  $result = $conn->query($query);
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Powery - HOME</title>
+    <link rel="stylesheet" href="style-home.css" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #ffffff;
+      }
+    </style>
+</head>
+<body>
+    <header class="nav-bar"> 
+        <nav> 
+          <a href="#"><img src="image/Powery (2).png" style="width: 5rem; height: 2.5rem; margin-right: 2rem; margin-left: 20px; margin-bottom: 10px; margin-top: 10px;"></a>  
+        </nav>
+        <div class="jumbotron">
+          <div class="bg-text">
+            <h1 style="font-weight: 700;">Peringkat Berdasarkan Harga</h1>
+          </div>
+        </div>
+    </header>
+    
+    <main> 
+        <div class="container-fluid" style="margin-top: 5%;">
+          <div class="row d-flex justify-content-center">
+            <?php
+              if($result -> num_rows > 0){
+                while($row = $result -> fetch_assoc()){
+              }
+            ?>
+            
+            <div class="col-3 mobilPage" >
+              <img src="<?php echo $row['photo'] ?>" alt="" class="styleMerk">       
+              <h4><a href="detailCar.php" class="stretched-link" style="text-decoration: none; color: black;"><?php echo $row['brand'] ?></a></h4>
+              <h5><?php echo $row['price'] ?></h5>
+            </div>
+            
+            <?php
+              }
+            ?>
+          </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p style="font-size: 25px;">
+          <a href="index.php">Home</a> 
+          
+          <div class="contact" style="display: flex;">
+            <a href="#" style="display: flex;">Contact</a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+           
+        </p> 
+      </footer>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
