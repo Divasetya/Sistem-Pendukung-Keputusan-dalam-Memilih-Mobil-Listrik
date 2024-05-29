@@ -95,7 +95,7 @@
 
         <main>
             <div class="container" style="margin-top: 3.9rem; padding-left: 0px; padding-right: 0px">
-                <p style="font-size: 40px; font-weight: 700; margin-bottom: 3.9rem">Preferensi Penilaian</p>
+                <p style="font-size: 40px; font-weight: 700; margin-bottom: 3.9rem">Preferensi Penilaian Harga</p>
                 
                 <!-- form input -->
                 <form class="col" id="formPenilaian" method="post" style="width: auto;">
@@ -108,7 +108,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value1">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Wuling Air EV Standard</p>
                         </div>
                         </div>
@@ -123,7 +123,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value2">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Toyota BZ4X Panoramic Roof (One Tone Color)</p>
                         </div>
                         </div>
@@ -138,7 +138,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value3">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Nissan Leaf One Toned</p>
                         </div>
                         </div>
@@ -183,7 +183,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value6">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Mercedes–Benz EQA 250</p>
                         </div>
                         </div>
@@ -228,7 +228,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value9">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
@@ -243,7 +243,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value10">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Toyota BZ4X Panoramic Roof (One Tone Color)</p>
                         </div>
                         </div>
@@ -258,7 +258,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value11">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Nissan Leaf One Toned</p>
                         </div>
                         </div>
@@ -303,7 +303,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value14">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Mercedes–Benz EQA 250</p>
                         </div>
                         </div>
@@ -348,7 +348,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value17">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
@@ -363,7 +363,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value18">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Nissan Leaf One Toned</p>
                         </div>
                         </div>
@@ -408,7 +408,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value21">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Mercedes–Benz EQA 250</p>
                         </div>
                         </div>
@@ -453,7 +453,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value24">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
@@ -498,7 +498,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value27">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Mercedes–Benz EQA 250</p>
                         </div>
                         </div>
@@ -543,7 +543,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value30">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
@@ -573,7 +573,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value32">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Mercedes–Benz EQA 250</p>
                         </div>
                         </div>
@@ -618,7 +618,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value35">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
@@ -633,7 +633,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value36">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Mercedes–Benz EQA 250</p>
                         </div>
                         </div>
@@ -678,7 +678,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value39">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
@@ -723,7 +723,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value42">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
@@ -738,22 +738,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value43">
                         </div>
-                        <div class="col d-flex justify-content-end">
-                            <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
-                        </div>
-                        </div>
-                    </div>
-
-                    <!-- container 44 BMW iX-Tesla Model Y Long Range -->
-                    <div class="container" style="padding-left: 0; margin-bottom: 10rem">
-                        <div class="row">
-                        <div class="col d-flex justify-content-start">
-                            <p id="leftText" style="font-size: 40px">BMW iX</p>
-                        </div>
-                        <div class="col d-flex justify-content-start">
-                            <input class="form-control" type="text" name="value44">
-                        </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
@@ -768,7 +753,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value45">
                         </div>
-                        <div class="col d-flex justify-content-end">
+                        <div class="col" style="text-align: right">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>

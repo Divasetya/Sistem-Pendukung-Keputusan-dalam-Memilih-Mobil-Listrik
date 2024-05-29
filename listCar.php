@@ -31,7 +31,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Powery - HOME</title>
+    <title>Powery</title>
     <link rel="stylesheet" href="style-home.css" />
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
@@ -48,12 +48,12 @@
 </head>
 <body>
     <header class="nav-bar"> 
-        <nav> 
-          <a href="#"><img src="image/Powery (2).png" style="width: 5rem; height: 2.5rem; margin-right: 2rem; margin-left: 20px; margin-bottom: 10px; margin-top: 10px;"></a>  
+        <nav style="padding-right: 2rem; padding-left: 4.5rem; padding-bottom: 0.7rem; padding-top: 0.7rem">
+            <a href="index.php"><img src="image/Powery (2).png" style="width: 11rem; height: 4.5rem" /></a>
         </nav>
         <div class="jumbotron">
           <div class="bg-text">
-            <h1 style="font-weight: 700;">Peringkat Berdasarkan Harga</h1>
+            <h1 style="font-weight: 700;">Peringkat Alternatif</h1>
           </div>
         </div>
     </header>
