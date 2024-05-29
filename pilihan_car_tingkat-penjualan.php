@@ -60,6 +60,18 @@
         $stmt->execute();
     }
 
+    // $command = escapeshellcmd('/usr/bin/python3 ahp_python_spk.py 2>&1');
+
+    // // shell_exec($convert);
+    // $output = shell_exec($command);
+
+    // if(strpos($output, 'Error') === false){
+    //     header('Location: listCar.php');
+    //     exit();
+    // } else {
+    //     echo "Terjadi kesalahan saat menjalankan skrip Python.";
+    // }
+
     header('Location: convert.php');
     exit();
     

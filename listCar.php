@@ -2,10 +2,28 @@
   
   include "connection.php";
 
-  $query = "SELECT car_data.image AS photo, car_data.harga AS price, car_data.tipe AS brand, ahp_results.score AS ahp_score FROM car_data JOIN ahp_results ON car_data.tipe = ahp_results.alternative ORDER BY ahp_results.score DESC";
-  
-  $result = $conn->query($query);
+  function koneksi(){
+    $hostname = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "electric_car";
 
+    $koneksi = mysqli_connect($hostname, $username, $password, $database) or die (mysqli_error(koneksi()));
+
+    return $koneksi;
+  }
+
+  function ambilCarData(){
+    $query = "SELECT car_data.car_index, car_data.image AS photo, car_data.harga AS price, car_data.tipe AS brand, ahp_results.score AS ahp_score FROM car_data JOIN ahp_results ON car_data.tipe = ahp_results.alternative ORDER BY ahp_results.score DESC";
+    $tabel_car = mysqli_query(koneksi(), $query) or die(mysqli_error(koneksi()));
+    while($row = mysqli_fetch_assoc($tabel_car)){
+      $daftarCar[] = $row;
+    }
+
+    return $daftarCar;
+  }
+
+  
 ?>
 
 <!DOCTYPE html>
@@ -43,16 +61,17 @@
     <main> 
         <div class="container-fluid" style="margin-top: 5%;">
           <div class="row d-flex justify-content-center">
+
             <?php
-              if($result -> num_rows > 0){
-                while($row = $result -> fetch_assoc()){
-              }
+              $listCar = ambilCarData();
+              foreach($listCar as $car){
+
             ?>
             
             <div class="col-3 mobilPage" >
-              <img src="<?php echo $row['photo'] ?>" alt="" class="styleMerk">       
-              <h4><a href="detailCar.php" class="stretched-link" style="text-decoration: none; color: black;"><?php echo $row['brand'] ?></a></h4>
-              <h5><?php echo $row['price'] ?></h5>
+              <img src="<?php echo $car['photo'] ?>" alt="" class="styleMerk">       
+              <h4><a href="detailCar.php?index=<?php echo $car['car_index']; ?>" class="link" style="text-decoration: none; color: black;"><?php echo $car['brand'] ?></a></h4>
+              <h5><?php echo $car['price'] ?></h5>
             </div>
             
             <?php

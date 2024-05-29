@@ -25,7 +25,7 @@
     </div>
     <!-- filter -->
     <div class="container d-flex justify-content-center">
-      <a href="pilihan2.php" style="text-decoration: none;">
+      <a href="pilihan_criteria.php" style="text-decoration: none;">
         <button class="btn btn-secondary text-bg-light d-flex justify-content-center" type="button" style="width: 46vw; padding: 0% 2%; border: none; border-radius: 50px">
           <span class="fontFilter">Mulai</span>
         </button>

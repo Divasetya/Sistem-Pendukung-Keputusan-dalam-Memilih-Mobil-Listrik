@@ -2,10 +2,24 @@
   
   include "connection.php";
 
-  //masukkin semua
-  $query = "SELECT car_data.image AS photo, car_data.harga AS price, car_data.tipe AS brand, ahp_results.score AS ahp_score FROM car_data JOIN ahp_results ON car_data.tipe = ahp_results.alternative ORDER BY ahp_results.score DESC";
-  
-  $result = $conn->query($query);
+  if(isset($_GET['index'])){
+    $car_index = $_GET['index'];
+
+    //masukkin semua
+    $stmt = mysqli_prepare($conn, "SELECT * FROM car_data WHERE car_index = ?");
+    mysqli_stmt_bind_param($stmt, "s", $car_index);
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
+
+    if (mysqli_num_rows($result) > 0){
+      $data = mysqli_fetch_assoc($result);
+
+    // $query = "SELECT * FROM car_data WHERE car_index = ?";
+    // $stmt = $conn -> prepare($query);
+    // $stmt->bind_param("s", $car_index);
+    // $result = $stmt->execute();
+
+    // $data = $result -> fetch_assoc();
 
 ?>
 
@@ -36,9 +50,9 @@
         </nav>
         <div class="jumbotron">
           <div class="bg-text">
-            <h1 style="font-weight: 700;">Hyundai Ioniq 5 Prime Standard Range</h1>
+            <h1 style="font-weight: 700;"><?php echo $data['tipe'];?></h1>
           </div>
-          <img src="image/hyundai ioniq.jpg" style="margin-left: auto; margin-right: auto; width: 430px; height: 300px;">
+          <img src="<?php echo $data['image'] ?>" style="margin-left: auto; margin-right: auto; width: 430px; height: 300px;">
         </div>
         
     </header>
@@ -53,31 +67,36 @@
             <tbody>
               <tr>
                 <td>Harga</td>
-                <td>Rp. 748.000.000</td>
+                <td><?php echo $data['harga']; ?></td>
               </tr>
               <tr>
                 <td>Kinerja Torsi</td>
-                <td>350 Nm</td>
+                <td><?php echo $data['kinerja_torsi']; ?></td>
               </tr>
               <tr>
                 <td>Kapasitas Baterai</td>
-                <td>58 kWh</td>
+                <td><?php echo $data['kapasitas_baterai']; ?></td>
               </tr>
               <tr>
                 <td>Kenyamanan</td>
-                <td>5/5</td>
+                <td><?php echo $data['kenyamanan']; ?></td>
               </tr>
               <tr>
                 <td>Keamanan</td>
-                <td>5/5</td>
+                <td><?php echo $data['keamanan']; ?></td>
               </tr>
               <tr>
                 <td>Tingkat Penjualan</td>
-                <td>33918</td>
+                <td><?php echo $data['tingkat_penjualan']; ?></td>
               </tr>
             </tbody>
           </table>
         </div>
+
+    <?php              
+        }
+      }
+    ?>
     </main>
     <footer>
         <p style="font-size: 25px;">
