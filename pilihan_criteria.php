@@ -65,7 +65,7 @@
 
         <main>
             <div class="container" style="margin-top: 3.9rem; padding-left: 0px; padding-right: 0px">
-                <p style="font-size: 40px; font-weight: 700; margin-bottom: 3.9rem">Preferensi Penilaian Kriteria</p>
+                <p style="font-size: 40px; font-weight: 700; margin-bottom: 3.9rem">Preferensi Penilaian</p>
                 
                 <!-- form input -->
                 <form class="col" id="formPenilaian" method="post" style="width: auto;">
@@ -168,7 +168,7 @@
                     <div class="col d-flex justify-content-start">
                         <input class="form-control" type="text" name="value7">
                     </div>
-                    <div class="col d-flex justify-content-end">
+                    <div class="col">
                         <p id="rightText7" style="font-size: 40px">Kapasitas Baterai</p>
                     </div>
                     </div>

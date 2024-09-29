@@ -5,24 +5,24 @@
 
     //retrieve data 
     $criteria_data = [
-        ['Hyundai Ioniq 5 Prime Standard', 'Air EV Long', $_POST['value1']],
-        ['Hyundai Ioniq 5 Prime Standard', 'BZ4X Panoramic Roof', $_POST['value2']],
-        ['Hyundai Ioniq 5 Prime Standard', 'Nissan Leaf', $_POST['value3']],
+        ['Hyundai Ioniq 5 Prime Standard', 'Wuling Air EV Standard', $_POST['value1']],
+        ['Hyundai Ioniq 5 Prime Standard', 'Toyota BZ4X Panoramic Roof (One Tone Color)', $_POST['value2']],
+        ['Hyundai Ioniq 5 Prime Standard', 'Nissan Leaf One Toned', $_POST['value3']],
         ['Hyundai Ioniq 5 Prime Standard', 'Lexus UX 300e', $_POST['value4']],
         ['Hyundai Ioniq 5 Prime Standard', 'Kia EV6 GT Line', $_POST['value5']],
-        ['Hyundai Ioniq 5 Prime Standard', 'Mercedes-Benz EQS 450', $_POST['value6']],
-        ['Hyundai Ioniq 5 Prime Standard', 'BMW i7', $_POST['value7']],
+        ['Hyundai Ioniq 5 Prime Standard', 'Mercedes-Benz EQA 250', $_POST['value6']],
+        ['Hyundai Ioniq 5 Prime Standard', 'BMW iX', $_POST['value7']],
         ['Hyundai Ioniq 5 Prime Standard', 'Citroen E-C4', $_POST['value8']],
-        ['Hyundai Ioniq 5 Prime Standard', 'Tesla Model Y', $_POST['value9']],
-        ['Wuling Air EV Standard', 'BZ4X Panoramic Roof', $_POST['value10']],
-        ['Wuling Air EV Standard', 'Nissan Leaf', $_POST['value11']],
+        ['Hyundai Ioniq 5 Prime Standard', 'Tesla Model Y Long Range', $_POST['value9']],
+        ['Wuling Air EV Standard', 'Toyota BZ4X Panoramic Roof (One Tone Color)', $_POST['value10']],
+        ['Wuling Air EV Standard', 'Nissan Leaf One Toned', $_POST['value11']],
         ['Wuling Air EV Standard', 'Lexus UX 300e', $_POST['value12']],
         ['Wuling Air EV Standard', 'Kia EV6 GT Line', $_POST['value13']],
-        ['Wuling Air EV Standard', 'Mercedes-Benz EQS 450', $_POST['value14']],
-        ['Wuling Air EV Standard', 'BMW i7', $_POST['value15']],
+        ['Wuling Air EV Standard', 'Mercedes-Benz EQA 250', $_POST['value14']],
+        ['Wuling Air EV Standard', 'BMW iX', $_POST['value15']],
         ['Wuling Air EV Standard', 'Citroen E-C4', $_POST['value16']],
-        ['Wuling Air EV Standard', 'Tesla Model Y', $_POST['value17']],
-        ['Toyota BZ4X Panoramic Roof (One Tone Color)', 'Nissan Leaf', $_POST['value18']],
+        ['Wuling Air EV Standard', 'Tesla Model Y Long Range', $_POST['value17']],
+        ['Toyota BZ4X Panoramic Roof (One Tone Color)', 'Nissan Leaf One Toned', $_POST['value18']],
         ['Toyota BZ4X Panoramic Roof (One Tone Color)', 'Lexus UX 300e', $_POST['value19']],
         ['Toyota BZ4X Panoramic Roof (One Tone Color)', 'Kia EV6 GT Line', $_POST['value20']],
         ['Toyota BZ4X Panoramic Roof (One Tone Color)', 'Mercedes–Benz EQA 250', $_POST['value21']],
@@ -107,7 +107,7 @@
 
         <main>
             <div class="container" style="margin-top: 3.9rem; padding-left: 0px; padding-right: 0px">
-                <p style="font-size: 40px; font-weight: 700; margin-bottom: 3.9rem">Preferensi Penilaian Tingkat Penjualan</p>
+                <p style="font-size: 40px; font-weight: 700; margin-bottom: 3.9rem">Preferensi Penilaian</p>
                 
                 <!-- form input -->
                 <form class="col" id="formPenilaian" method="post" style="width: auto;">
@@ -120,7 +120,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value1">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Wuling Air EV Standard</p>
                         </div>
                         </div>
@@ -135,7 +135,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value2">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Toyota BZ4X Panoramic Roof (One Tone Color)</p>
                         </div>
                         </div>
@@ -150,7 +150,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value3">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Nissan Leaf One Toned</p>
                         </div>
                         </div>
@@ -165,7 +165,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value4">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Lexus UX 300e</p>
                         </div>
                         </div>
@@ -180,7 +180,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value5">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Kia EV6 GT Line</p>
                         </div>
                         </div>
@@ -195,7 +195,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value6">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Mercedes–Benz EQA 250</p>
                         </div>
                         </div>
@@ -210,7 +210,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value7">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">BMW iX</p>
                         </div>
                         </div>
@@ -225,7 +225,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value8">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Citroen E-C4</p>
                         </div>
                         </div>
@@ -240,7 +240,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value9">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
@@ -255,7 +255,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value10">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Toyota BZ4X Panoramic Roof (One Tone Color)</p>
                         </div>
                         </div>
@@ -270,7 +270,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value11">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Nissan Leaf One Toned</p>
                         </div>
                         </div>
@@ -285,7 +285,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value12">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Lexus UX 300e</p>
                         </div>
                         </div>
@@ -300,7 +300,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value13">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Kia EV6 GT Line</p>
                         </div>
                         </div>
@@ -315,7 +315,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value14">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Mercedes–Benz EQA 250</p>
                         </div>
                         </div>
@@ -330,7 +330,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value15">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">BMW iX</p>
                         </div>
                         </div>
@@ -345,7 +345,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value16">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Citroen E-C4</p>
                         </div>
                         </div>
@@ -360,7 +360,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value17">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
@@ -375,7 +375,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value18">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Nissan Leaf One Toned</p>
                         </div>
                         </div>
@@ -390,7 +390,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value19">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Lexus UX 300e</p>
                         </div>
                         </div>
@@ -405,7 +405,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value20">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Kia EV6 GT Line</p>
                         </div>
                         </div>
@@ -420,7 +420,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value21">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Mercedes–Benz EQA 250</p>
                         </div>
                         </div>
@@ -435,7 +435,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value22">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">BMW iX</p>
                         </div>
                         </div>
@@ -450,7 +450,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value23">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Citroen E-C4</p>
                         </div>
                         </div>
@@ -465,7 +465,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value24">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
@@ -480,7 +480,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value25">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Lexus UX 300e</p>
                         </div>
                         </div>
@@ -495,7 +495,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value26">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Kia EV6 GT Line</p>
                         </div>
                         </div>
@@ -510,7 +510,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value27">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Mercedes–Benz EQA 250</p>
                         </div>
                         </div>
@@ -525,7 +525,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value28">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">BMW iX</p>
                         </div>
                         </div>
@@ -540,7 +540,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value29">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Citroen E-C4</p>
                         </div>
                         </div>
@@ -555,7 +555,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value30">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
@@ -570,7 +570,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value31">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Kia EV6 GT Line</p>
                         </div>
                         </div>
@@ -585,7 +585,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value32">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Mercedes–Benz EQA 250</p>
                         </div>
                         </div>
@@ -600,7 +600,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value33">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">BMW iX</p>
                         </div>
                         </div>
@@ -615,7 +615,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value34">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Citroen E-C4</p>
                         </div>
                         </div>
@@ -630,7 +630,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value35">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
@@ -645,7 +645,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value36">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Mercedes–Benz EQA 250</p>
                         </div>
                         </div>
@@ -660,7 +660,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value37">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">BMW iX</p>
                         </div>
                         </div>
@@ -675,7 +675,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value38">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Citroen E-C4</p>
                         </div>
                         </div>
@@ -690,7 +690,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value39">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
@@ -705,7 +705,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value40">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">BMW iX</p>
                         </div>
                         </div>
@@ -720,7 +720,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value41">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Citroen E-C4</p>
                         </div>
                         </div>
@@ -735,7 +735,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value42">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
@@ -750,7 +750,22 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value43">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
+                            <p id="rightText" style="font-size: 40px">Citroen E-C4</p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- container 44 BMW iX-Tesla Model Y Long Range -->
+                    <div class="container" style="padding-left: 0; margin-bottom: 10rem">
+                        <div class="row">
+                        <div class="col d-flex justify-content-start">
+                            <p id="leftText" style="font-size: 40px">BMW iX</p>
+                        </div>
+                        <div class="col d-flex justify-content-start">
+                            <input class="form-control" type="text" name="value44">
+                        </div>
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
@@ -765,7 +780,7 @@
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value45">
                         </div>
-                        <div class="col" style="text-align: right">
+                        <div class="col d-flex justify-content-end">
                             <p id="rightText" style="font-size: 40px">Tesla Model Y Long Range</p>
                         </div>
                         </div>
