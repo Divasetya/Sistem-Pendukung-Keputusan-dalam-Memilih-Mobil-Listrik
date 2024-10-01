@@ -65,7 +65,7 @@
 
         <main>
             <div class="container" style="margin-top: 3.9rem; padding-left: 0px; padding-right: 0px">
-                <p style="font-size: 40px; font-weight: 700; margin-bottom: 3.9rem">Preferensi Penilaian</p>
+                <p style="font-size: 40px; font-weight: 700; margin-bottom: 3.9rem">Preferensi Penilaian Kriteria</p>
                 
                 <!-- form input -->
                 <form class="col" id="formPenilaian" method="post" style="width: auto;">

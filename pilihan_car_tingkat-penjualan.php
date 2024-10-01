@@ -107,7 +107,7 @@
 
         <main>
             <div class="container" style="margin-top: 3.9rem; padding-left: 0px; padding-right: 0px">
-                <p style="font-size: 40px; font-weight: 700; margin-bottom: 3.9rem">Preferensi Penilaian</p>
+                <p style="font-size: 40px; font-weight: 700; margin-bottom: 3.9rem">Preferensi Penilaian Tingkat Penjualan</p>
                 
                 <!-- form input -->
                 <form class="col" id="formPenilaian" method="post" style="width: auto;">
@@ -640,7 +640,7 @@
                     <div class="container" style="padding-left: 0; margin-bottom: 10rem">
                         <div class="row">
                         <div class="col d-flex justify-content-start">
-                            <p id="leftText" style="font-size: 40px">Lexus UX 300e</p>
+                            <p id="leftText" style="font-size: 40px">Kia EV6 GT Line</p>
                         </div>
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value36">
@@ -655,7 +655,7 @@
                     <div class="container" style="padding-left: 0; margin-bottom: 10rem">
                         <div class="row">
                         <div class="col d-flex justify-content-start">
-                            <p id="leftText" style="font-size: 40px">Lexus UX 300e</p>
+                            <p id="leftText" style="font-size: 40px">Kia EV6 GT Line</p>
                         </div>
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value37">
@@ -670,7 +670,7 @@
                     <div class="container" style="padding-left: 0; margin-bottom: 10rem">
                         <div class="row">
                         <div class="col d-flex justify-content-start">
-                            <p id="leftText" style="font-size: 40px">Lexus UX 300e</p>
+                            <p id="leftText" style="font-size: 40px">Kia EV6 GT Line</p>
                         </div>
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value38">
@@ -685,7 +685,7 @@
                     <div class="container" style="padding-left: 0; margin-bottom: 10rem">
                         <div class="row">
                         <div class="col d-flex justify-content-start">
-                            <p id="leftText" style="font-size: 40px">Lexus UX 300e</p>
+                            <p id="leftText" style="font-size: 40px">Kia EV6 GT Line</p>
                         </div>
                         <div class="col d-flex justify-content-start">
                             <input class="form-control" type="text" name="value39">
